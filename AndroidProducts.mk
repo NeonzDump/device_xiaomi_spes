@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_spes.mk
+    $(LOCAL_DIR)/komodo_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_spes-user \
-    nad_spes-userdebug \
-    nad_spes-eng
+    komodo_spes-user \
+    komodo_spes-userdebug \
+    komodo_spes-eng
