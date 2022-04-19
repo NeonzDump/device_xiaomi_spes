@@ -14,11 +14,10 @@ $(call inherit-product, device/xiaomi/spes/device.mk)
 # Inherit some common KomodoOS stuff.
 $(call inherit-product, vendor/komodo/config/common.mk)
 
-KOMODO_GAPPS_TYPE := nogapps
+# Komodo Stuff
+KOMODO_OFFICIAL := true
+KOMODO_GAPPS_TYPE := gapps
 KOMODO_VARIANT := RELEASE
-
-TARGET_USES_BLUR := true
-USE_PIXEL_CHARGING := true
 
 # Product Specifics
 PRODUCT_NAME := komodo_spes
@@ -28,3 +27,12 @@ PRODUCT_MODEL := Redmi Note 11
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Some Build Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+TARGET_USES_AOSP_CHARGER := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_INCLUDE_STOCK_ARCORE := false
